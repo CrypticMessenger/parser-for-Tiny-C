@@ -1,3 +1,7 @@
+## Parser for Tiny C (a subset of C language)
+- Developed a tiny C parser using parsing technique and avoiding anomalies. 
+- The tools used for development were Flex and Bison. 
+
 cucu.l
     - cucu.l tokenizes each matching string.
     - please take care when writing writing pointer to char i.e. "char *" is correct, 
