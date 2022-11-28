@@ -10,24 +10,26 @@
     - error will be reported in lexer.txt as well as in terminal.
 
 ### cucu.y
-  - function defination is in format similar to that of in C.
-  - function declaration is in format similar to that of in C.
-  - if statements and while statements is allowed.
-  - output is printed in "parser.txt".
-  - during parsing of an expression, format of printing is "similar to" postfix.
-  - parsing of bracket is a little tricky , but can be done by parsing from left to right. 
-  - similarly parsing of if-else , while etc. is also a little tricky.
-  - content within function is above function name.
+    - function defination is in format similar to that of in C.
+    - function declaration is in format similar to that of in C.
+    - if statements and while statements is allowed.
+    - output is printed in "parser.txt".
+    - during parsing of an expression, format of printing is "similar to" postfix.
+    - parsing of bracket is a little tricky , but can be done by parsing from left to right. 
+    - similarly parsing of if-else , while etc. is also a little tricky.
+    - content within function is above function name.
 
 ## how to run?
 - run following commands in order. 
-  - flex cucu.l
-  - bison -dy cucu.y
-  - gcc y.tab.c lex.yy.c -o cucu.exe
-  - ./cucu.exe Sample1.cu 
-      -should give proper output in lexer.txt and parser.txt
-  - ./cucu.exe Sample2.cu 
-      -should give an error.
+```
+  flex cucu.l
+  bison -dy cucu.y
+  gcc y.tab.c lex.yy.c -o cucu.exe
+  ./cucu.exe Sample1.cu 
+  ./cucu.exe Sample2.cu 
+```
+- Sample1.cu should give proper output in lexer.txt and parser.txt
+- Sample2.cu should give an error.
 
 
 
